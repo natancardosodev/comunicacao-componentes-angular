@@ -4,10 +4,7 @@
             <h3>Value: {{ value }}</h3>
             <app-child-item 
                 [title]="title"
-                (plusOne)=incBy(1)
-                (plusTwo)=incBy(2)
-                (minusOne)=incBy(-1)
-                (minusTwo)=incBy(-2)
+                (inc)=incBy($event)
                 >
             </app-child-item>
         </section>
