@@ -5,3 +5,13 @@
 </div>
 
 <app-timer #stopwatch></app-timer>
+
+<div>
+    <button mat-button color="primary" (click)="start()">Start</button>
+    <button mat-button color="accent" (click)="stop()">Stop</button>
+    <button mat-button color="warn" (click)="clear()">Clear</button>
+</div>
+
+<app-timer #stopwatch2></app-timer>
+
+<p #myP>Hi</p>
