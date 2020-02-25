@@ -8,7 +8,8 @@ import {
   MatIconModule,
   MatInputModule,  
   MatFormFieldModule,
-  MatDividerModule
+  MatDividerModule,
+  MatProgressBarModule
 } from "@angular/material";
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { EventComponent } from './event/event.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ItemClientComponent } from './clients/item-client/item-client.component';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { TimerComponent } from './parent-child/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     EventComponent,
     ChildItemComponent,
     ClientsComponent,
-    ItemClientComponent
+    ItemClientComponent,
+    ParentChildComponent,
+    TimerComponent
   ],  
   imports: [
     BrowserModule,
@@ -38,6 +43,7 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatProgressBarModule,
     MatDividerModule
   ],
   providers: [],
